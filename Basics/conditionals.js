@@ -23,3 +23,16 @@ function greater(first, last) {
 
   return undefined;
 }
+
+//*early return
+function isEnough(cost, money) {
+    return cost===money || money>cost;
+}
+
+//*early return
+function canAccess(purchasedSubscription, freeTrial) {
+    if(purchasedSubscription===true || freeTrial ===true){
+        return true
+    }
+    return false
+}
